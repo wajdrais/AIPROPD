@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #002147; /* Navy Blue */
+    --secondary-color: #333333; /* Dark Gray */
+    --accent-color: #9b1b30; /* Crimson Red */
+    --accent-blue: #4682b4; /* Steel Blue */
+    --background-color: #f5f5f5; /* Light Gray */
+    --text-color: #444444; /* Charcoal */
+    --light-text: #b0b0b0; /* Light Gray */
+    --third-color: #BD7418;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    font-family: 'Spartan', sans-serif; /* Apply Spartan globally */
+    cursor: url('C:\Users\WAJD BOSS\Desktop\AIPROPD\ipproda\src\assests\cursor.png'), auto;
+  }
+  
+  .navbar {
+    background-color: var(--primary-color);
+  }
+  
+  .nav-link {
+    color: var(--light-text);
+  }
+  
+  .nav-link:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Additional styles for sections */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color); /* Set headers to use text color */
+    font-family: 'Spartan', sans-serif; /* Ensure headers use Spartan */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
