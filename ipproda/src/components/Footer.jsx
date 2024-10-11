@@ -2,8 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import what from "../assests/whatsapp.png";
 import gmail from "../assests/gmail.png";
-import oldp from "../assests/oldphone.png";
-import logoGif from "../assests/logotrial.gif"; // Replace with the path to your GIF file
+import logoGif from "../assests/logotrial.gif";
+import cell from "../assests/cell.png" // Replace with the path to your GIF file
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -60,6 +60,8 @@ const Footer = () => {
             {t("OFFICE_HOURS")}
           </h5>
           <p style={{ marginBottom: "8px", color: "black" }}>{t("OPEN")}</p>
+          <p style={{ marginBottom: "8px", color: "black" }}>{t("REST")}</p>
+
         </div>
         <div className="col" style={{ flex: "1", textAlign: "center" }}>
           <h5
@@ -121,7 +123,7 @@ const Footer = () => {
           </p>
           <p style={{ marginBottom: "8px", color: "black" }}>
             <a
-              href="https://wa.me/4917045645"
+              href="https://wa.me/004915731267526"
               target="_blank"
               rel="noreferrer"
               style={{
@@ -142,21 +144,32 @@ const Footer = () => {
                   verticalAlign: "middle",
                 }}
               />
-              +49 170 45645
-            </a>
+004915731267526            </a>
           </p>
-          <p style={{ margin: 0, color: "black" }}>
-            <img
-              src={oldp}
-              alt="Old Phone Logo"
+          <p style={{ marginBottom: "8px", color: "black" }}>
+            <a
+              href="https://wa.me/004915731267526"
+              target="_blank"
+              rel="noreferrer"
               style={{
-                width: "18px",
-                height: "18px",
-                marginRight: "10px",
-                verticalAlign: "middle",
+                textDecoration: "none",
+                color: "black",
+                transition: "color 0.3s",
               }}
-            />
-            77-445-566
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#ffcc00")} // Change color on hover
+              onMouseLeave={(e) => (e.currentTarget.style.color = "black")} // Reset color
+            >
+              <img
+                src={cell}
+                alt="WhatsApp Logo"
+                style={{
+                  width: "18px",
+                  height: "18px",
+                  marginRight: "10px",
+                  verticalAlign: "middle",
+                }}
+              />
+004915731267526            </a>
           </p>
         </div>
         <div className="col" style={{ flex: "1", textAlign: "center" }}>
@@ -182,7 +195,7 @@ const Footer = () => {
               onMouseEnter={(e) => (e.currentTarget.style.color = "#ffcc00")} // Change color on hover
               onMouseLeave={(e) => (e.currentTarget.style.color = "black")} // Reset color
             >
-              Spenerweg 30 35394 Gießen
+              Spenerweg 30 <br />35394 Gießen <br /> Deutschland
             </a>
           </p>
         </div>

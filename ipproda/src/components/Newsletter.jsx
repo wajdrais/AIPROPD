@@ -12,13 +12,17 @@ const Newsletter = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const titleRef = useRef(null);
   const lineRef = useRef(null);
-  
+
   // State to track if a toast has already been shown
   const [toastShown, setToastShown] = useState(false);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
-  }, []);
+    updateLineWidth();
+    window.addEventListener("resize", updateLineWidth);
+    return () => window.removeEventListener("resize", updateLineWidth);
+  }, [t]);
+
 
   const updateLineWidth = () => {
     if (titleRef.current && lineRef.current) {
@@ -42,7 +46,7 @@ const Newsletter = () => {
     e.preventDefault();
 
     if (!fullName || !email || !phoneNumber) {
-      toast.error(t("ALL_FIELDS_REQUIRED"));
+      toast.error(t("ALL_FIELDS_REQUIRED"), { containerId: "newsletter" });
       return;
     }
 
@@ -63,26 +67,27 @@ const Newsletter = () => {
 
       const data = await response.json();
       console.log(data);
+
       if (response.ok) {
-        if (!toastShown) { // Check if a toast has been shown
-          toast.success(t("SUBSCRIPTION_SUCCESSFUL"));
-          setToastShown(true); // Mark toast as shown
+        if (!toastShown) {
+          toast.success(t("SUBSCRIPTION_SUCCESSFUL"), { containerId: "newsletter" });
+          setToastShown(true);
         }
         setFullName("");
         setEmail("");
         setPhoneNumber("");
         updateLineWidth();
       } else {
-        if (!toastShown) { // Check if a toast has been shown
-          toast.error(t("SUBSCRIPTION_FAILED"));
-          setToastShown(true); // Mark toast as shown
+        if (!toastShown) {
+          toast.error(t("SUBSCRIPTION_FAILED"), { containerId: "newsletter" });
+          setToastShown(true);
         }
       }
     } catch (error) {
       console.error("Error:", error);
-      if (!toastShown) { // Check if a toast has been shown
-        toast.error(t("SUBSCRIPTION_FAILED"));
-        setToastShown(true); // Mark toast as shown
+      if (!toastShown) {
+        toast.error(t("SUBSCRIPTION_FAILED"), { containerId: "newsletter" });
+        setToastShown(true);
       }
     }
   };
@@ -226,8 +231,9 @@ const Newsletter = () => {
       </div>
 
       <ToastContainer
+        containerId="newsletter"
         position="top-right"
-        autoClose={2000} // Set autoClose to 2000 milliseconds
+        autoClose={2000}
         hideProgressBar={true}
       />
     </div>

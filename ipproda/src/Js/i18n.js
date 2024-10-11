@@ -45,6 +45,8 @@ i18n.use(initReactI18next).init({
           Service9_descr:"AIPROPD specializes in conducting various undercover operations tailored to meet the unique needs of our clients. Our trained investigators discreetly gather evidence and conduct surveillance to uncover the truth in sensitive situations.", 
           Service10:"MISSING PERSONS",
           Service10_descr:"AIPROPD focuses on investigating cases of missing individuals, addressing various contributing factors such as substance abuse, mental health issues, abductions, and domestic violence. Our dedicated team employs comprehensive strategies to locate and assist those who have disappeared under troubling circumstances.",
+          Service11:"EXPERT LAWYER SERVICES",
+          Service11_descr:"AIPROPD has a full team of highly skilled lawyers providing tailored legal services for individuals and businesses. Our legal professionals specialize in criminal, civil, and corporate law, offering expert advice, strategic representation, and effective solutions. We are committed to handling your legal needs with the utmost professionalism and confidentiality. Whether it's complex legal disputes or general legal advice, our team of lawyers is ready to guide you through every challenge.",
           //NEWSLETTER
         LATEST_NEWS: "LATEST NEWS",
         "SUBSCRIBE TO OUR NEWSLETTER": "SUBSCRIBE TO OUR NEWSLETTER",
@@ -67,9 +69,10 @@ i18n.use(initReactI18next).init({
         Button_Form: "Send the message",
         Company_name: "International Professional Private Detective Agency",
         OFFICE_HOURS: "OFFICE HOURS",
-        OPEN: "Monday - Friday: 08:30 - 4:30",
+        OPEN: "Monday - Friday: 08:30 - 16:30",
+        REST:"Rest time : 12:00 - 13.30",
         ADDRESS: "ADDRESS",
-        RESERVED: "AIPROPD ® 2024 - All Rights Reserved",
+        RESERVED: "AIPROPD ® 2021 - All Rights Reserved",
         
       },
     },
@@ -113,6 +116,8 @@ i18n.use(initReactI18next).init({
           Service9_descr:"AIPROPD est spécialisée dans la réalisation de diverses opérations sous couverture adaptées aux besoins uniques de nos clients. Nos enquêteurs formés collectent discrètement des preuves et mènent des surveillances pour révéler la vérité dans des situations sensibles.",
           Service10:"PERSONNES DISPARUES",
           Service10_descr:"AIPROPD se concentre sur l'enquête des cas de personnes disparues, en tenant compte de divers facteurs contributifs tels que l'abus de substances, les problèmes de santé mentale, les enlèvements et la violence domestique. Notre équipe dévouée utilise des stratégies complètes pour localiser et aider ceux qui ont disparu dans des circonstances troublantes.",
+          Service11:"SERVICES D'AVOCATS EXPERTS",
+          Service11_descr:"AIPROPD dispose d'une équipe complète d'avocats hautement qualifiés, fournissant des services juridiques personnalisés pour les particuliers et les entreprises. Nos avocats sont spécialisés en droit pénal, civil et des affaires, offrant des conseils experts, une représentation stratégique et des solutions efficaces. Nous nous engageons à traiter vos besoins juridiques avec le plus grand professionnalisme et confidentialité. Que ce soit pour des litiges juridiques complexes ou des conseils juridiques généraux, notre équipe d'avocats est prête à vous accompagner à chaque étape.",
           //NEWSLETTER
         LATEST_NEWS: "DERNIÈRES NOUVELLES",
         "SUBSCRIBE TO OUR NEWSLETTER": "ABONNEZ-VOUS À NOTRE NEWSLETTER",
@@ -133,14 +138,15 @@ i18n.use(initReactI18next).init({
         Name: "Entrez votre nom",
         Email: "Entrez votre e-mail",
         Message: "N'hésitez pas à entrer votre message",
-        Button_Form: "Nachricht senden",
+        Button_Form: "Envoyer message",
         //footer
         Company_name:
           "Agence Internationale de Détection Privée Professionnelle",
         OFFICE_HOURS: "HEURES DE BUREAU",
         OPEN: "Lundi - Vendredi : 08h30 - 16h30",
+        REST:"Rest time : 12:00 - 13.30",
         ADDRESS: "ADRESSE",
-        RESERVED: "AIPROPD ® 2024 - Tous droits réservés",
+        RESERVED: "AIPROPD ® 2021 - Tous droits réservés",
       },
     },
     de: {
@@ -183,6 +189,8 @@ i18n.use(initReactI18next).init({
           Service9_descr:"AIPROPD hat sich auf die Durchführung verschiedener verdeckter Operationen spezialisiert, die auf die einzigartigen Bedürfnisse unserer Kunden zugeschnitten sind. Unsere geschulten Ermittler sammeln diskret Beweise und führen Überwachungen durch, um die Wahrheit in sensiblen Situationen aufzudecken.",
           Service10:"VERMISSTE PERSONEN",
           Service10_descr:"AIPROPD konzentriert sich auf die Untersuchung von Fällen vermisster Personen und berücksichtigt dabei verschiedene beitragende Faktoren wie Drogenmissbrauch, psychische Erkrankungen, Entführungen und häusliche Gewalt. Unser engagiertes Team setzt umfassende Strategien ein, um Personen zu finden und zu unterstützen, die unter schwierigen Umständen verschwunden sind.",
+          Service11:"FACHANWALTSERVICES",
+          Service11_descr:"AIPROPD verfügt über ein vollständiges Team hochqualifizierter Anwälte, die maßgeschneiderte Rechtsdienstleistungen für Privatpersonen und Unternehmen anbieten. Unsere Anwälte sind auf Straf-, Zivil- und Wirtschaftsrecht spezialisiert und bieten fundierte Beratung, strategische Vertretung und effektive Lösungen. Wir verpflichten uns, Ihre rechtlichen Bedürfnisse mit höchster Professionalität und Vertraulichkeit zu behandeln. Ob es sich um komplexe Rechtsstreitigkeiten oder allgemeine Rechtsberatung handelt, unser Anwaltsteam steht Ihnen bei jedem Schritt zur Seite.",
           //NEWSLETTER
         LATEST_NEWS: "NEUESTE NACHRICHTEN",
         "SUBSCRIBE TO OUR NEWSLETTER": "ABONNIEREN SIE UNSEREN NEWSLETTER",
@@ -208,8 +216,9 @@ i18n.use(initReactI18next).init({
         Company_name: "Agentur International Professionnelle Privat Detektiv",
         OFFICE_HOURS: "BÜROZEITEN",
         OPEN: "Montag - Freitag: 08:30 - 16:30",
+        REST:"Ruhezeit: 12:00 - 13:30",
         ADDRESS: "ADRESSE",
-        RESERVED: "AIPROPD ® 2024 - Alle Rechte vorbehalten",
+        RESERVED: "AIPROPD ® 2021 - Alle Rechte vorbehalten",
       },
     },
     ar: {
@@ -251,6 +260,8 @@ i18n.use(initReactI18next).init({
           Service9_descr:"تتخصص الوكالة الدولية المحترفة للتحقيقات الخاصة في إجراء عمليات سرية متعددة تناسب الاحتياجات الفريدة لعملائنا. يقوم محققونا المدربون بجمع الأدلة بشكل سري وإجراء المراقبة لكشف الحقيقة في الحالات الحساسة.", 
           Service10:"الأشخاص المفقودون",
           Service10_descr:"تركز الوكالة الدولية المحترفة للتحقيقات الخاصة على التحقيق في حالات الأشخاص المفقودين، مع معالجة العوامل المختلفة المساهمة مثل تعاطي المخدرات، والمشكلات النفسية، والاختطاف، والعنف المنزلي. يستخدم فريقنا المخصص استراتيجيات شاملة للعثور على الأشخاص الذين اختفوا في ظروف مقلقة.",
+          Service11:"خدمات المحامين المتخصصين",
+          Service11_descr:"تمتلك الوكالة الدولية المحترفة للتحقيقات الخاصة فريقًا كاملاً من المحامين ذوي المهارات العالية، الذين يقدمون خدمات قانونية مخصصة للأفراد والشركات. متخصصونا القانونيون لديهم خبرة في القانون الجنائي، المدني، وقانون الشركات، ويقدمون استشارات قانونية متقدمة، تمثيلاً استراتيجياً، وحلولًا فعالة. نحن ملتزمون بالتعامل مع احتياجاتك القانونية بأقصى درجات الاحترافية والسرية. سواء كنت تواجه قضايا قانونية معقدة أو تحتاج إلى استشارة قانونية عامة، فإن فريق محامينا هنا لدعمك في كل تحدٍ.",
           //NEWSLETTER
         LATEST_NEWS: "أحدث الأخبار",
         "SUBSCRIBE TO OUR NEWSLETTER": "اشترك في نشرتنا الإخبارية",
@@ -272,8 +283,9 @@ i18n.use(initReactI18next).init({
         Company_name: "الوكالة الدولية المحترفة للتحقيقات الخاصة",
         OFFICE_HOURS: "ساعات العمل",
         OPEN: "من الإثنين إلى الجمعة: 08:30 - 16:30",
+        REST:"وقت الراحة: 12:00 - 13:30",
         ADDRESS: "العنوان",
-        RESERVED: "AIPROPD ® 2024 - جميع الحقوق محفوظة",
+        RESERVED: "AIPROPD ® 2021 - جميع الحقوق محفوظة",
       },
     },
   },
