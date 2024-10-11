@@ -42,7 +42,7 @@ router.post('/subscribe', async (req, res) => {
     await newSubscriber.save();
 
     // Confirmation URL (adjust as needed)
-    const confirmationUrl = `https://www.aipropd.de/confirm/${confirmationToken}`;
+    const confirmationUrl = `https://www.aipropd.de`;
 
     // Email HTML template
     const confirmationEmail = `
