@@ -17,7 +17,7 @@
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
     font-family: 'Spartan', sans-serif; /* Apply Spartan globally */
-    cursor: url('C:\Users\WAJD BOSS\Desktop\AIPROPD\ipproda\src\assests\cursor.png'), auto;
+    cursor: url('../src/assests/cursor.png'), auto;
   }
   
   .navbar {
