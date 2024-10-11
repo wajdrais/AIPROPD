@@ -42,7 +42,7 @@ router.post('/subscribe', async (req, res) => {
     await newSubscriber.save();
 
     // Confirmation URL (adjust as needed)
-    const confirmationUrl = `http://localhost:3000//confirm/${confirmationToken}`;
+    const confirmationUrl = `https://www.aipropd.de/confirm/${confirmationToken}`;
 
     // Email HTML template
     const confirmationEmail = `
@@ -54,8 +54,6 @@ router.post('/subscribe', async (req, res) => {
           <style>
               body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f7f7f7; }
               .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-              .logo { text-align: center; margin-bottom: 20px; }
-              .logo img { max-width: 150px; }
               .company-name { text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px; }
               .content { text-align: center; margin: 20px 0; }
               .button { display: inline-block; padding: 15px 25px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
@@ -64,9 +62,6 @@ router.post('/subscribe', async (req, res) => {
       </head>
       <body>
           <div class="container">
-              <div class="logo">
-                  <img src="C:\Users\WAJD BOSS\Desktop\AIPROPD\ipproda\src\assests\logo.png" alt="Your Logo">
-              </div>
               <div class="company-name">
                   Agentur International Professionelle Privat Detektiv
               </div>
