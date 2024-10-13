@@ -181,6 +181,18 @@ const Services = () => {
         <div style={{ width: "80%", margin: "0 auto" }}>
         <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service12")}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={{
+                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+              }}>
+                {t("Service12_descr")}
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service11")}</Typography>
             </AccordionSummary>
             <AccordionDetails>
