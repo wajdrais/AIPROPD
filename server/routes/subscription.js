@@ -7,7 +7,8 @@ const router = express.Router();
 
 // Nodemailer transporter setup
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host:"smtp.oxcs.bluehost.com",
+  port:587,
   auth: {
     user: process.env.EMAIL, // EMAIL from .env
     pass: process.env.EMAIL_PASS, // EMAIL_PASS from .env
@@ -48,7 +49,7 @@ router.post('/subscribe', async (req, res) => {
     const confirmationEmail = `
       <!DOCTYPE html>
       <html lang="en">
-      <head>
+      <head>  
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <style>
