@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import what from "../assests/whatsapp.png";
-import gmail from "../assests/gmail.png";
+import gmail from "../assests/envelope.png";
 import logoGif from "../assests/logotrial.gif";
 import cell from "../assests/cell.png" // Replace with the path to your GIF file
 

@@ -80,17 +80,29 @@ const Services = () => {
   };
 
   return (
-    <div id="Services"
+    <div
+      id="Services"
       style={{
         padding: "20px",
         textAlign: "center",
         direction: i18n.language === "ar" ? "rtl" : "ltr", // Set direction based on language
       }}
     >
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <h2
           ref={titleRef}
-          style={{ fontSize: "38px", fontWeight: "bold", color: "#002147", margin: "0" }}
+          style={{
+            fontSize: "38px",
+            fontWeight: "bold",
+            color: "#002147",
+            margin: "0",
+          }}
           data-aos="flip-right"
         >
           {t("OUR_SERVICES")}
@@ -118,18 +130,30 @@ const Services = () => {
         {/* Square 1 */}
         <div
           style={squareStyle}
-          onMouseEnter={() => setHovered([true, false, false])}
-          onMouseLeave={() => setHovered([false, false, false])}
+          onMouseEnter={() => setHovered([true, false, false, false])}
+          onMouseLeave={() => setHovered([false, false, false, false])}
         >
           <div style={squareInnerStyle(hovered[0])}>
             <div style={squareFrontStyle}>
-              <h3 style={{ fontSize: "22px", color: "var(--primary-color)", fontWeight: "bold" }}>
+              <h3
+                style={{
+                  fontSize: "22px",
+                  color: "var(--primary-color)",
+                  fontWeight: "bold",
+                }}
+              >
                 {t("Service1")}
               </h3>
-              <img src={files} alt="" style={{ height: "70px", marginTop: "50px" }} />
+              <img
+                src={files}
+                alt=""
+                style={{ height: "70px", marginTop: "50px" }}
+              />
             </div>
             <div style={squareBackStyle}>
-              <p style={{ fontSize: "16px", color: "white" }}>{t("Service1_descr")}</p>
+              <p style={{ fontSize: "16px", color: "white" }}>
+                {t("Service1_descr")}
+              </p>
             </div>
           </div>
         </div>
@@ -142,13 +166,25 @@ const Services = () => {
         >
           <div style={squareInnerStyle(hovered[1])}>
             <div style={squareFrontStyle}>
-              <h3 style={{ fontSize: "22px", color: "var(--primary-color)", fontWeight: "bold" }}>
+              <h3
+                style={{
+                  fontSize: "22px",
+                  color: "var(--primary-color)",
+                  fontWeight: "bold",
+                }}
+              >
                 {t("Service2")}
               </h3>
-              <img src={track} alt="" style={{ height: "70px", marginTop: "50px" }} />
+              <img
+                src={track}
+                alt=""
+                style={{ height: "70px", marginTop: "50px" }}
+              />
             </div>
             <div style={squareBackStyle}>
-              <p style={{ fontSize: "16px", color: "white" }}>{t("Service2_descr")}</p>
+              <p style={{ fontSize: "16px", color: "white" }}>
+                {t("Service2_descr")}
+              </p>
             </div>
           </div>
         </div>
@@ -161,13 +197,25 @@ const Services = () => {
         >
           <div style={squareInnerStyle(hovered[2])}>
             <div style={squareFrontStyle}>
-              <h3 style={{ fontSize: "22px", color: "var(--primary-color)", fontWeight: "bold" }}>
+              <h3
+                style={{
+                  fontSize: "22px",
+                  color: "var(--primary-color)",
+                  fontWeight: "bold",
+                }}
+              >
                 {t("Service3")}
               </h3>
-              <img src={kidnapped} alt="" style={{ height: "70px", marginTop: "50px" }} />
+              <img
+                src={kidnapped}
+                alt=""
+                style={{ height: "70px", marginTop: "50px" }}
+              />
             </div>
             <div style={squareBackStyle}>
-              <p style={{ fontSize: "16px", color: "white" }}>{t("Service3_descr")}</p>
+              <p style={{ fontSize: "16px", color: "white" }}>
+                {t("Service3_descr")}
+              </p>
             </div>
           </div>
         </div>
@@ -175,114 +223,157 @@ const Services = () => {
 
       {/* Accordion section */}
       <div style={{ marginTop: "60px" }}>
-        <h3 style={{ color: "#BD7418", fontSize: "32px", fontWeight: "bold", marginBottom: "60px" }}>
+        <h3
+          style={{
+            color: "#BD7418",
+            fontSize: "32px",
+            fontWeight: "bold",
+            marginBottom: "60px",
+          }}
+        >
           {t("IN WHAT WE SPECIALIZE")}
         </h3>
         <div style={{ width: "80%", margin: "0 auto" }}>
-        <Accordion>
+          <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service12")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service12")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service12_descr")}
               </Typography>
             </AccordionDetails>
           </Accordion>
-        <Accordion>
+          <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service11")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service11")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service11_descr")}
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service4")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service4")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service4_descr")}
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service5")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service5")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service5_descr")}
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service6")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service6")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service6_descr")}
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service7")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service7")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service7_descr")}
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service8")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service8")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service8_descr")}
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service9")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service9")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service9_descr")}
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography style={{ color: "black", fontWeight: "bold" }}>{t("Service10")}</Typography>
+              <Typography style={{ color: "black", fontWeight: "bold" }}>
+                {t("Service10")}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{
-                textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
-              }}>
+              <Typography
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left", // Align text based on language
+                }}
+              >
                 {t("Service10_descr")}
               </Typography>
             </AccordionDetails>
